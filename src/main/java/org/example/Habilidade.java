@@ -1,14 +1,9 @@
 package org.example;
 
-public class Habilidade {
+public abstract class Habilidade {
 
-    String nome;
-    int custo;
-    ResultadoHabilidade ativar;
+     String nome;
+     int custo;
 
-    public Habilidade(String nome, int custo, ResultadoHabilidade funcao){
-        this.nome = nome;
-        this.custo = custo;
-        this.ativar = funcao;
-    }
+    public abstract ResultadoHabilidade ativar(Personagem personagem);
 }
